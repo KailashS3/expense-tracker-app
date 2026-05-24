@@ -31,7 +31,7 @@ Flask Backend
    ↓
 MySQL Database
 
-📂 Project Structure
+## 📂 Project Structure
 expense-tracker-app/
 │
 ├── backend/
