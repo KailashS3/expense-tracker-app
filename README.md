@@ -33,6 +33,7 @@ MySQL Database
 ```
 
 ## 📂 Project Structure
+```
 expense-tracker-app/
 │
 ├── backend/
@@ -59,7 +60,7 @@ expense-tracker-app/
 │   └── nginx.conf
 │
 └── docker-compose.yml
-
+```
 ## 🐳 Docker Setup
 
 Build & Run
@@ -78,29 +79,29 @@ docker compose down
 ```
 
 ## 🔗 Access
-App URL → http://localhost
-Flask Backend → http://localhost:5000
-MySQL Port → 3306
+- App URL → http://localhost
+- Flask Backend → http://localhost:5000
+- MySQL Port → 3306
 
 ## 🔧 Common Docker Commands
-Check containers → docker ps
-View logs → docker compose logs -f
-Restart → docker compose restart
-Remove volumes → docker compose down -v
+- Check containers → docker ps
+- View logs → docker compose logs -f
+- Restart → docker compose restart
+- Remove volumes → docker compose down -v
 
 ## 🛡️ Security Features
-Password Hashing
-Session Authentication
-Docker Network Isolation
-Environment Variables
-Reverse Proxy with Nginx
+- Password Hashing
+- Session Authentication
+- Docker Network Isolation
+- Environment Variables
+- Reverse Proxy with Nginx
 
 ## 📈 Future Improvements
-Charts & Analytics
-AI Expense Insights
-SMS / Telegram Notifications
-Mobile Responsive UI
-PDF Export Reports
-Multi-user Groups
+- Charts & Analytics
+- AI Expense Insights
+- SMS / Telegram Notifications
+- Mobile Responsive UI
+- PDF Export Reports
+- Multi-user Groups
 Recurring Expenses
 Category Budgeting
