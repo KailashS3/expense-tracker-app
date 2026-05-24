@@ -126,28 +126,28 @@ Category Budgeting
 
 ### **Login Account**
 
-<img width="800" height="240" alt="image" src="https://github.com/user-attachments/assets/27441813-4832-4f6c-bed3-ed8c130aa5e9" />
+<img width="800" height="220" alt="image" src="https://github.com/user-attachments/assets/27441813-4832-4f6c-bed3-ed8c130aa5e9" />
 
 - if email/password is incorrect then will throw error
-<img width="800" height="240" alt="image" src="https://github.com/user-attachments/assets/76aa6679-3b2a-4eb5-beae-2ef6de48a689" />
+<img width="800" height="210" alt="image" src="https://github.com/user-attachments/assets/76aa6679-3b2a-4eb5-beae-2ef6de48a689" />
 
 
 ### **Dashboard Screen**
 
-<img width="800" height="240" alt="image" src="https://github.com/user-attachments/assets/3ffe4045-523f-4a30-a4ae-94ccdbfe03a2" />
+<img width="800" height="210" alt="image" src="https://github.com/user-attachments/assets/3ffe4045-523f-4a30-a4ae-94ccdbfe03a2" />
 
 
 ### **Expenses History Screen**
 
-<img width="800" height="240" alt="image" src="https://github.com/user-attachments/assets/81843fe4-66cf-4bb3-9d5b-e1844d7b856b" />
+<img width="800" height="210" alt="image" src="https://github.com/user-attachments/assets/81843fe4-66cf-4bb3-9d5b-e1844d7b856b" />
 
 
 ### **Notification Screen**
 
-<img width="800" height="240" alt="image" src="https://github.com/user-attachments/assets/6705a8f7-6e50-420c-a71a-04718a124e17" />
+<img width="800" height="210" alt="image" src="https://github.com/user-attachments/assets/6705a8f7-6e50-420c-a71a-04718a124e17" />
 
 ### **Setting Screen**
 
-<img width="800" height="240" alt="image" src="https://github.com/user-attachments/assets/70d24a4a-1680-4018-a405-b3ca968541fe" />
+<img width="800" height="210" alt="image" src="https://github.com/user-attachments/assets/70d24a4a-1680-4018-a405-b3ca968541fe" />
 
 
