@@ -22,7 +22,7 @@ A modern **Expense Tracker Web Application** built with:
 
 ## 🏗️ Project Architecture
 
-```text
+```
 Browser
    ↓
 Nginx
@@ -30,6 +30,7 @@ Nginx
 Flask Backend
    ↓
 MySQL Database
+```
 
 ## 📂 Project Structure
 expense-tracker-app/
@@ -59,7 +60,7 @@ expense-tracker-app/
 │
 └── docker-compose.yml
 
-🐳 Docker Setup
+## 🐳 Docker Setup
 
 Build & Run
 ```
@@ -76,25 +77,25 @@ Stop
 docker compose down
 ```
 
-🔗 Access
+## 🔗 Access
 App URL → http://localhost
 Flask Backend → http://localhost:5000
 MySQL Port → 3306
 
-🔧 Common Docker Commands
+## 🔧 Common Docker Commands
 Check containers → docker ps
 View logs → docker compose logs -f
 Restart → docker compose restart
 Remove volumes → docker compose down -v
 
-🛡️ Security Features
+## 🛡️ Security Features
 Password Hashing
 Session Authentication
 Docker Network Isolation
 Environment Variables
 Reverse Proxy with Nginx
 
-📈 Future Improvements
+## 📈 Future Improvements
 Charts & Analytics
 AI Expense Insights
 SMS / Telegram Notifications
