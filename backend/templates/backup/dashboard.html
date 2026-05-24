@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Expense Dashboard</h2>
+    <a href="/settings">
+
+        <button>
+            Notification Settings
+        </button>
+
+    </a>
+
+    <div class="stats">
+
+        <div class="card">
+            <h3>Total Expense</h3>
+            <p>₹{{ total_expense }}</p>
+        </div>
+	
+	<div class="card">
+	     <h3>Selected month</h3>
+	     <h4>
+               {{ formatted_selected_month }}
+    	     </h4>
+    	     <p>₹{{ selected_month_total }}</p>
+	</div>
+
+        <div class="card">
+            <h3>Monthly Expense</h3>
+            <p>₹{{ monthly_total }}</p>
+        </div>
+
+        <div class="card">
+            <h3>Weekly Expense</h3>
+            <p>₹{{ weekly_total }}</p>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <form method="POST">
+
+        <input type="number"
+               step="0.01"
+               name="amount"
+               placeholder="Amount"
+               required>
+
+        <input type="text"
+               name="category"
+               placeholder="Category">
+
+        <input type="text"
+               name="description"
+               placeholder="Description">
+
+        <input type="date"
+               name="expense_date"
+               required>
+
+        <button type="submit">
+            Add Expense
+        </button>
+
+    </form>
+    <form method="GET" action="/dashboard">
+
+    	<label>Select Month</label>
+
+    	<input type="month"
+               name="month"
+               value="{{ selected_month }}">
+
+        <button type="submit">
+            View
+        </button>
+
+    </form>  
+    <hr>
+
+    <h3>Expense History</h3>
+
+    <table>
+
+        <tr>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Date</th>
+        </tr>
+
+        {% for expense in expenses %}
+
+        <tr>
+
+            <td>₹{{ expense.amount }}</td>
+
+            <td>{{ expense.category }}</td>
+
+            <td>{{ expense.description }}</td>
+
+            <td>{{ expense.expense_date }}</td>
+
+        </tr>
+
+        {% endfor %}
+
+    </table>
+
+    <br>
+
+    <a href="/logout">Logout</a>
+
+</div>
+
+</body>
+</html>

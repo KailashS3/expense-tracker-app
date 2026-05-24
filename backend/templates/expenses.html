@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>
+    Expense History
+</h2>
+
+<table>
+
+    <tr>
+
+        <th>Amount</th>
+
+        <th>Category</th>
+
+        <th>Description</th>
+
+        <th>Date</th>
+
+    </tr>
+
+    {% for expense in expenses %}
+
+    <tr>
+
+        <td>
+            ₹{{ expense.amount }}
+        </td>
+
+        <td>
+            {{ expense.category }}
+        </td>
+
+        <td>
+            {{ expense.description }}
+        </td>
+
+        <td>
+            {{ expense.expense_date }}
+        </td>
+
+    </tr>
+
+    {% endfor %}
+
+</table>
+
+{% endblock %}

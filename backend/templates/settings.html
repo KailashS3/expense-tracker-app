@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>
+    Notification Settings
+</h2>
+
+<form method="POST">
+
+    <div class="card">
+
+        <label>
+
+            <input type="checkbox"
+                   name="scheduler_enabled"
+
+                   {% if setting.scheduler_enabled %}
+                   checked
+                   {% endif %}>
+
+            Enable Notifications
+
+        </label>
+
+    </div>
+
+    <br>
+
+    <div class="card">
+
+        <h3>
+            Reminder Frequency
+        </h3>
+
+        <br>
+
+        <label>
+
+            <input type="checkbox"
+                   name="daily_enabled"
+
+                   {% if setting.daily_enabled %}
+                   checked
+                   {% endif %}>
+
+            Daily Reminder
+
+        </label>
+
+        <br><br>
+
+        <label>
+
+            <input type="checkbox"
+                   name="weekly_enabled"
+
+                   {% if setting.weekly_enabled %}
+                   checked
+                   {% endif %}>
+
+            Weekly Report
+
+        </label>
+
+        <br><br>
+
+        <label>
+
+            <input type="checkbox"
+                   name="monthly_enabled"
+
+                   {% if setting.monthly_enabled %}
+                   checked
+                   {% endif %}>
+
+            Monthly Report
+
+        </label>
+
+        <br><br>
+
+        <label>
+
+            <input type="checkbox"
+                   name="yearly_enabled"
+
+                   {% if setting.yearly_enabled %}
+                   checked
+                   {% endif %}>
+
+            Yearly Report
+
+        </label>
+
+    </div>
+
+    <br>
+
+    <div class="card">
+
+        <h3>
+            Budget Alert
+        </h3>
+
+        <br>
+
+        <label>
+            Budget Limit
+        </label>
+
+        <input type="number"
+               step="0.01"
+               name="budget_limit"
+               value="{{ setting.budget_limit }}">
+
+    </div>
+<!--
+    <br>
+
+    <div class="card">
+
+        <h3>
+            Email Notification
+        </h3>
+
+        <br>
+
+        <label>
+            Email Address
+        </label>
+
+        <input type="email"
+               name="notification_email"
+               value="{{ setting.notification_email }}">
+
+        <br>
+
+        <label>
+            Notify Time
+        </label>
+
+        <input type="time"
+               name="notify_time"
+               value="{{ setting.notify_time }}">
+
+    </div>
+ -->
+    <br>
+
+    <button type="submit">
+
+        Save Settings
+
+    </button>
+
+</form>
+
+{% endblock %}

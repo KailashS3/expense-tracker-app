@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        Expense Tracker
+    </title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>
+        Expense Tracker
+    </h2>
+
+    <a href="/dashboard">
+        Dashboard
+    </a>
+
+    <a href="/expenses">
+        Expenses
+    </a>
+
+    <a href="/notifications">
+        Notifications
+    </a>
+
+    <a href="/settings">
+        Settings
+    </a>
+
+    <a href="/logout">
+        Logout
+    </a>
+
+</div>
+
+<div class="main-content">
+
+    {% block content %}
+
+    {% endblock %}
+
+</div>
+
+</body>
+
+</html>

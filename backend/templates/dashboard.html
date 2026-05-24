@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>
+    Dashboard
+</h2>
+
+<form method="GET"
+      action="/dashboard">
+
+    <input type="month"
+           name="month"
+           value="{{ selected_month }}">
+
+    <button type="submit">
+        View
+    </button>
+
+</form>
+
+<br>
+
+<div class="stats">
+
+    <div class="card">
+
+        <h3>Total Expense</h3>
+
+        <p>
+            ₹{{ total_expense }}
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>
+            {{ formatted_selected_month }}
+        </h3>
+
+        <p>
+            ₹{{ selected_month_total }}
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Monthly Expense</h3>
+
+        <p>
+            ₹{{ monthly_total }}
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Weekly Expense</h3>
+
+        <p>
+            ₹{{ weekly_total }}
+        </p>
+
+    </div>
+
+</div>
+
+<hr>
+
+<h3>
+    Add Expense
+</h3>
+
+<form method="POST">
+
+    <input type="number"
+           step="0.01"
+           name="amount"
+           placeholder="Amount"
+           required>
+
+    <input type="text"
+           name="category"
+           placeholder="Category">
+
+    <input type="text"
+           name="description"
+           placeholder="Description">
+
+    <input type="date"
+           name="expense_date"
+           required>
+
+    <button type="submit">
+        Add Expense
+    </button>
+
+</form>
+
+{% endblock %}
