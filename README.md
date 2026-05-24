@@ -65,8 +65,8 @@ expense-tracker-app/
 
 Clone Setup
 ```
-git clone https://github.com/KailashS3/notepad-app.git
-cd notepad-app
+git clone https://github.com/KailashS3/expense-tracker-app.git
+cd expense-tracker-app
 ```
 
 Build & Run
