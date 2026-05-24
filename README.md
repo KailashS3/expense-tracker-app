@@ -120,7 +120,7 @@ Category Budgeting
 
 ### **Create Account**
 
-- if user name exists then will gove error
+- if user name exists will throw error
 <img width="800" height="240" alt="image" src="https://github.com/user-attachments/assets/e5979acc-b38c-4bcc-9107-f64226bfce61" />
 
 
@@ -128,7 +128,7 @@ Category Budgeting
 
 <img width="800" height="240" alt="image" src="https://github.com/user-attachments/assets/27441813-4832-4f6c-bed3-ed8c130aa5e9" />
 
-- if email/password is incorrect then will give error
+- if email/password is incorrect then will throw error
 <img width="800" height="240" alt="image" src="https://github.com/user-attachments/assets/76aa6679-3b2a-4eb5-beae-2ef6de48a689" />
 
 
