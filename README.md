@@ -63,6 +63,12 @@ expense-tracker-app/
 ```
 ## 🐳 Docker Setup
 
+Clone Setup
+```
+git clone https://github.com/KailashS3/notepad-app.git
+cd notepad-app
+```
+
 Build & Run
 ```
 docker compose up --build
@@ -77,17 +83,15 @@ Stop
 ```
 docker compose down
 ```
-
-## 🔗 Access & Setup
-clone setup
-```
-git clone https://github.com/KailashS3/notepad-app.git
-cd notepad-app
-```
 Run in Browser
 ```
 http://localhost:5000
 ```
+
+## 🔗 Access & Setup
+- App URL → http://localhost
+- Flask Backend → http://localhost:5000
+- MySQL Port → 3306
 
 ## 🔧 Common Docker Commands
 - Check containers → docker ps
