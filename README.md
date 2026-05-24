@@ -78,10 +78,16 @@ Stop
 docker compose down
 ```
 
-## 🔗 Access
-- App URL → http://localhost
-- Flask Backend → http://localhost:5000
-- MySQL Port → 3306
+## 🔗 Access & Setup
+clone setup
+```
+git clone https://github.com/KailashS3/notepad-app.git
+cd notepad-app
+```
+Run in Browser
+```
+http://localhost:5000
+```
 
 ## 🔧 Common Docker Commands
 - Check containers → docker ps
